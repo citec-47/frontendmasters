@@ -30,10 +30,23 @@ body {
   font-size: var(--font-size);
 }
 
+a {
+  color: var(--magenta);
+}
+
 nav a {
   text-decoration: none;
   color: var(--white);
   display: block;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -89,15 +102,6 @@ h1,
 h2,
 h3 {
   margin: 0;
-}
-
-a {
-  color: var(--magenta);
-}
-
-a:hover {
-  color: var(--hotmag);
-  text-decoration: none;
 }
 
 img {
@@ -181,10 +185,6 @@ footer {
   padding: 4rem 0;
 }
 
-footer a {
-  text-decoration: none;
-}
-
 /* media section */
 #projects {
   padding: 4rem 1rem 10rem 1rem;
@@ -192,7 +192,7 @@ footer a {
 
 #projects h2 {
   font-size: 2.5rem;
-  margin-bottom: calc(2.5rem*1.5);
+  margin-bottom: calc(2.5rem * 1.5);
 }
 
 #projects h3 {
@@ -237,7 +237,7 @@ footer a {
 @media (min-width: 550px) {
   article {
     display: grid;
-    grid-template-columns: repeat(10. 1fr);
+    grid-template-columns: repeat(10, 1fr);
     gap: 1rem;
   }
 
